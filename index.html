@@ -1,1 +1,59 @@
-<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ViVi's Joggers Collection</title><link rel="stylesheet" href="styles.css"></head><body><header><h1>ViVi's Joggers Collection</h1><nav><a href="index.html">Home</a> <a href="shop.html">Shop</a> <a href="about.html">About</a> <a href="contact.html">Contact</a></nav></header><section class="hero"><h2>Elevate Your Style, Define Your Comfort</h2><p>Fashionable clothing, bags and accessories.</p><a class="btn" href="shop.html">Shop Now</a></section><script src="script.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vivi - Joggers & Accessories</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Vivi</h1>
+    <p>Comfortable Joggers & Trendy Accessories in Accra</p>
+    <button id="cart-btn">Cart (<span id="cart-count">0</span>)</button>
+  </header>
+
+  <section class="products">
+    <h2>Featured Products</h2>
+    
+    <div class="product" data-name="Classic Black Joggers" data-price="150">
+      <img src="https://via.placeholder.com/300x300.png?text=Black+Joggers" alt="Black Joggers">
+      <h3>Classic Black Joggers</h3>
+      <p>GHS 150</p>
+      <button onclick="addToCart('Classic Black Joggers', 150)">Add to Cart</button>
+    </div>
+
+    <div class="product" data-name="Grey Sweatpants" data-price="140">
+      <img src="https://via.placeholder.com/300x300.png?text=Grey+Joggers" alt="Grey Joggers">
+      <h3>Grey Sweatpants</h3>
+      <p>GHS 140</p>
+      <button onclick="addToCart('Grey Sweatpants', 140)">Add to Cart</button>
+    </div>
+
+    <div class="product" data-name="Street Cap" data-price="60">
+      <img src="https://via.placeholder.com/300x300.png?text=Street+Cap" alt="Cap">
+      <h3>Street Cap</h3>
+      <p>GHS 60</p>
+      <button onclick="addToCart('Street Cap', 60)">Add to Cart</button>
+    </div>
+  </section>
+
+  <!-- Cart Modal -->
+  <div id="cart-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Your Cart</h2>
+      <div id="cart-items"></div>
+      <h3>Total: GHS <span id="cart-total">0</span></h3>
+      <button id="whatsapp-btn">Order via WhatsApp</button>
+      <button id="paystack-btn">Pay with Paystack/MoMo</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>WhatsApp: +233 24 XXX XXXX | Delivery across Ghana | Vivi © 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
